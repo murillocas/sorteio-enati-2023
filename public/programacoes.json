@@ -1,0 +1,39 @@
+{
+    "count": 50,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 126,
+            "nome": "Minicurso: Fundamentos da Pedagogia ",
+            "data": "2021-12-02",
+            "hora": "08:00:00",
+            "hora_termino": "12:00:00",
+            "exige_inscricao_separada": true
+        },
+        {
+            "id": 7,
+            "nome": "Mesa Redonda",
+            "data": "2021-12-02",
+            "hora": "19:00:00",
+            "hora_termino": "23:00:00",
+            "exige_inscricao_separada": false
+        },
+        {
+            "id": 13,
+            "nome": " Empresas Juniores",
+            "data": "2021-12-03",
+            "hora": "16:15:00",
+            "hora_termino": "17:45:00",
+            "exige_inscricao_separada": false
+        },
+        {
+            "id": 143,
+            "nome": "Linguagem R",
+            "data": "2021-12-02",
+            "hora": "07:30:00",
+            "hora_termino": "12:30:00",
+            "exige_inscricao_separada": true
+        }
+    ]
+}

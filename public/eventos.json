@@ -1,0 +1,127 @@
+{
+    "count": 154,
+    "next": "http://localhost:8000",
+    "previous": null,
+    "results": [
+    {
+    "id": 200,
+    "titulo": "Semana do Zootecnista - IF Goiano Campus ",
+    "imagem_topo": "http://localhost:8000/",
+    "data_inicio": "2023-05-01",
+    "data_fim": "2023-05-11",
+    "publicado": true,
+    "inscricao_aberta": true,
+    "url": "isz"
+    },
+    {
+    "id": 196,
+    "titulo": "Reunião de Formação - NEABI IPORÁ",
+    "imagem_topo": null,
+    "data_inicio": "2023-04-10",
+    "data_fim": "2023-04-19",
+    "publicado": true,
+    "inscricao_aberta": false,
+    "url": "fneabi"
+    },
+    {
+    "id": 195,
+    "titulo": "II Fórum Cultural do IF Goiano",
+    "imagem_topo": "http://localhost:8000",
+    "data_inicio": "2023-04-17",
+    "data_fim": "2023-05-10",
+    "publicado": true,
+    "inscricao_aberta": true,
+    "url": "forum"
+    },
+    {
+    "id": 193,
+    "titulo": "II CONGRESSO DE PESQUISA E PÓS-GRADUAÇÃO DO CAMPUS CERES",
+    "imagem_topo": "http://localhost:",
+    "data_inicio": "2023-04-20",
+    "data_fim": "2023-06-16",
+    "publicado": true,
+    "inscricao_aberta": true,
+    "url": "cppg"
+    },
+    {
+    "id": 191,
+    "titulo": "Encontro Institucional: Elaboração do PDI 2024-2028",
+    "imagem_topo": "http://localhost:8000/",
+    "data_inicio": "2023-04-11",
+    "data_fim": "2023-04-18",
+    "publicado": true,
+    "inscricao_aberta": false,
+    "url": "encontr"
+    },
+    {
+    "id": 187,
+    "titulo": "Yoga para saúde física e mental no trabalho",
+    "imagem_topo": "http://localhost:8000",
+    "data_inicio": "2023-04-19",
+    "data_fim": "2023-05-01",
+    "publicado": true,
+    "inscricao_aberta": false,
+    "url": "yoga"
+    },
+    {
+    "id": 186,
+    "titulo": "Meditação para saúde física e mental no trabalho",
+    "imagem_topo": "http://localhost:8000",
+    "data_inicio": "2023-04-12",
+    "data_fim": "2023-10-23",
+    "publicado": true,
+    "inscricao_aberta": true,
+    "url": "meditr"
+    },
+    {
+    "id": 184,
+    "titulo": "Ciclo Formativo em IC: Preparação para eventos científicos",
+    "imagem_topo": null,
+    "data_inicio": "2023-04-05",
+    "data_fim": "2023-04-12",
+    "publicado": true,
+    "inscricao_aberta": false,
+    "url": "ic"
+    },
+    {
+    "id": 182,
+    "titulo": "Seminário de Saúde da Criança do Adolescente: 10 anos do GPSaCA",
+    "imagem_topo": "http://localhost:8000/mng",
+    "data_inicio": "2023-04-05",
+    "data_fim": "2023-04-21",
+    "publicado": true,
+    "inscricao_aberta": false,
+    "url": "gpsa"
+    },
+    {
+    "id": 179,
+    "titulo": "Utilização do modelo )",
+    "imagem_topo": "http://localhost:8000/media/g",
+    "data_inicio": "2023-03-28",
+    "data_fim": "2023-03-29",
+    "publicado": true,
+    "inscricao_aberta": false,
+    "url": "safer"
+    },
+    {
+    "id": 178,
+    "titulo": "Palestra: a",
+    "imagem_topo": null,
+    "data_inicio": "2023-03-29",
+    "data_fim": "2023-04-03",
+    "publicado": true,
+    "inscricao_aberta": false,
+    "url": "palestracontrolebiologicos"
+    },
+    {
+    "id": 177,
+    "titulo": "IF Goiano Campus Ceres - 8ª Edição",
+    "imagem_topo": "http://localhost:8000",
+    "data_inicio": "2023-03-30",
+    "data_fim": "2023-04-04",
+    "publicado": true,
+    "inscricao_aberta": false,
+    "url": "festivaldeginasticaifgoianoc"
+    }
+]
+    }
