@@ -60,7 +60,7 @@ export default {
   justify-content: center;
   align-items: center;
 
-  width: 100%;
+  width: 90%;
 }
 .cardEventosVue {
   display: flex;

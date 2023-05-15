@@ -22,16 +22,29 @@ export default {
 </script>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+*{
+  margin: 0;
+}
+a{
+  text-decoration:none;
+
+}
 #app{
  display: flex;
  align-items: center;
  justify-content: center;
- background-color: blueviolet;
-width: 50%;
+  width: 100%;
 }
 body{
+  font-family: 'Roboto', sans-serif;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+
 </style>
