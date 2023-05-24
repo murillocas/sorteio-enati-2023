@@ -15,11 +15,11 @@ const routes = [
         path:'/',name:"Eventos",
         component:() => import('@/components/listaEventos.vue')
     },{
-        path:'/programacao',
+        path:'/programacao/:url',
         component:() => import('@/components/componenteProgramacao.vue')
 
     },{
-        path : '/inscritos',name: "Inscritos",
+        path : '/inscritos/:url/:idEvent',name: "Inscritos",
         component:() => import('@/components/componenteInscritos.vue'),
     }
 

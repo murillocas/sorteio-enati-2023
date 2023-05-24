@@ -6,11 +6,12 @@
           :data_inicio="testestestes"/>-->
    
     <div class="listaCard" v-for="(data, index) in Leventos" :key="index">
-      <router-link to="/programacao">
+        <router-link :to="`/programacao/${data.url}`">
         <cardEventos
           :imagem="'/imgexemplo.png'"
           :titulo="data.titulo"
           :data_inicio="data.data_inicio"
+          :url="data.url"
         />
       </router-link>
     </div>

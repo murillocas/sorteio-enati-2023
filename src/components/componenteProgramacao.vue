@@ -6,7 +6,7 @@
           :data_inicio="testestestes"/>-->
    
     <div class="listaCard" v-for="(data, index) in programacao" :key="index">
-      <router-link to="/inscritos">
+        <router-link :to="`/inscritos/${urlParam }/${data.id}`">
         <cardProgramacao
           :imagem="'/imgexemplo.png'"
           :nome="data.nome"
@@ -26,6 +26,10 @@ import {API_URL_PROGRAMACOES} from '@/api';
 
 export default {
   name: "programacaoEvento",
+   mounted() {
+    this.urlParam = this.$route.params.url;
+    console.log(this.urlParam); // Exibe o valor do parâmetro "url"
+  },
   components: {
     cardProgramacao,
   },
@@ -35,12 +39,13 @@ export default {
   data() {
     return {
       programacao: [],
+      urlParam: "",
     };
   },
   methods: {
     obterListaEventos() {
       axios
-        .get(API_URL_PROGRAMACOES)
+        .get(API_URL_PROGRAMACOES /* +"/" + this.urlParam*/)
         .then((resposta) => {
           console.log(resposta.data);
           this.programacao = resposta.data.results;

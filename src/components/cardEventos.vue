@@ -36,6 +36,11 @@ export default {
       type: String,
       default: "imagem",
     },
+    url: {
+      type: String,
+      default: "",
+
+    }
   },
 };
 </script>
@@ -68,8 +73,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  //flex-direction: row;
-
+ 
   border-radius: 10px;
   margin: 5px;
   width: 100%;
