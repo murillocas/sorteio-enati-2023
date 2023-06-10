@@ -5,12 +5,13 @@
           :data_inicio="testestestes"/>-->
 
     <div class="listaCard" v-for="(data, index) in programacao" :key="index">
-      <router-link :to="`/inscritos/${urlParam}/${data.id}`">
+      <router-link :to="`/inscritos/${urlParam}/${data.id}/${data.nome}`">
         <cardProgramacao
           :imagem="'/imgexemplo.png'"
           :nome="data.nome"
           :hora_inicio="data.hora"
           :hora_fim="data.hora_termino"
+          
         />
       </router-link>
     </div>
