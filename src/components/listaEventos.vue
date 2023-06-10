@@ -21,7 +21,7 @@
 <script>
 import axios from "axios";
 import cardEventos from "./cardEventos.vue";
-import {API_URL_EVENTOS} from '@/api';
+import {API_URL_BASE} from '@/api';
 
 
 export default {
@@ -40,7 +40,7 @@ export default {
   methods: {
     obterListaEventos() {
       axios
-        .get(API_URL_EVENTOS)
+        .get(API_URL_BASE)
         .then((resposta) => {
           console.log(resposta.data);
           this.Leventos = resposta.data.results;

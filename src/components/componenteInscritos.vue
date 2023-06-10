@@ -16,8 +16,8 @@
       <h1 class="NomeSorteado">{{ NomeSorteado }}</h1>
     </div>
 
-    <h2 v-for="(data, index) in ListaAuxSorteio" :key="index">{{ data }}</h2>
-    </div>
+    <!--<h2 v-for="(data, index) in ListaAuxSorteio" :key="index">{{ data }}</h2>-->
+    </div> 
     
   </div>
 </template>
@@ -29,8 +29,7 @@ import { API_URL_INSCRITOS, API_TOKEN } from "@/api";
 export default {
   name: "componenteInscritos",
   mounted() {
-    this.idEvent = this.$route.params.idEvent;
-    this.urlParam = this.$route.params.url;
+    
   },
   data() {
     return {
@@ -43,24 +42,32 @@ export default {
       QTDJASON: null,
       listaAtual: 1,
       idEvent: "",
+      contador: 1,
+
     };
   },
   created() {
+    this.idEvent = this.$route.params.idEvent;
+    this.urlParam = this.$route.params.url;
     this.obterListaInscritos();
     this.preencherListaAux();
   },
   methods: {
-    obterListaInscritos() {
-      axios
-        .get(API_URL_INSCRITOS /*+ "/" + this.urlParam + "/" + this.idEvent*/)
+   async obterListaInscritos() {
+    try {
+      await axios
+        .get(API_URL_INSCRITOS + "/" + this.urlParam + "/" + this.idEvent+"/" + this.contador)
         .then((resposta) => {
           console.log(resposta.data);
-          this.Linscritos = resposta.data.results;
+          //this.Linscritos = resposta.data.results;
+          this.Linscritos.push(...resposta.data.results);
+
           console.log(this.Linscritos);
           this.next = resposta.data.next;
           this.prev = resposta.data.previous;
           this.QTDINscrito = resposta.data.count;
           this.QTDJASON = this.Linscritos.length;
+          this.contador += 1;
           if (this.next != null) {
             this.obterListaInscritos();
           }
@@ -69,6 +76,10 @@ export default {
           console.log(erro);
         });
       console.log(this.ListaAuxSorteio);
+} catch (erro) {
+        console.error("Erro ao obter dados da API:", erro);
+      }
+
     },
     obterListaInscritosteste() {
       var pegarProximo = true;
