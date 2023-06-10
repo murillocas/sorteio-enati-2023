@@ -60,7 +60,7 @@ export default {
   background-color: #e6e6e6;
   margin: 10px auto;
   border-radius: 10px;
-
+  max-width: 500px;
 }
 
 .inerContent{

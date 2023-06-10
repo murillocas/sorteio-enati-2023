@@ -1,19 +1,28 @@
 <template>
   <div class="container">
     <div class="container2">
-      <h2 class="qtdInscritos">QTD Inscritos {{ QTDINscrito }}</h2>
+
+      <div class = "informacoes">
+
+        <h2>Evento: {{ nomeEvento }}</h2>
+        <h2 class="qtdInscritos">QTD Inscritos {{ QTDINscrito }}</h2>
+        
+      </div>
+
     <!-- <h2>QTD Json {{QTDJASON}}</h2>
 
       <h2>{{prev}} prev</h2>
       <h2>{{next}} next</h2>
 
       <router-link to="/">Home</router-link>-->
-    <div class="Botao">
-      <h2 @click="sortear">Botão</h2>
-    </div>
+   
 
     <div class="divNomeSorteado">
       <h1 class="NomeSorteado">{{ NomeSorteado }}</h1>
+    </div>
+
+    <div @click="sortear" class="Botao">
+      <h2 >Sortear</h2>
     </div>
 
     <!--<h2 v-for="(data, index) in ListaAuxSorteio" :key="index">{{ data }}</h2>-->
@@ -37,18 +46,19 @@ export default {
       QTDINscrito: null,
       prev: null,
       next: 0,
-      NomeSorteado: "Nome do Sorteado",
+      NomeSorteado: "",
       ListaAuxSorteio: [],
       QTDJASON: null,
       listaAtual: 1,
       idEvent: "",
       contador: 1,
-
+      nomeEvento: ""
     };
   },
   created() {
     this.idEvent = this.$route.params.idEvent;
     this.urlParam = this.$route.params.url;
+    this.nomeEvento = this.$route.params.nomeEvento;
     this.obterListaInscritos();
     this.preencherListaAux();
   },
@@ -182,31 +192,71 @@ export default {
 
 
 <style scoped>
-body {
+
+
+
+.informacoes {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.informacoes h2{
+    text-align: center;
+    font-size: 140%;
+    margin-bottom: 20px;
 }
 .container {
   display: flex;
-  width: 100vh;
+  width: 100%;
   height: 100vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.NomeSorteado {
+
+.container2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  border: solid 2px #49a3f2;
+
+  width: 90%;
+  height: 80vh;
+  max-width: 100%;
+  max-height: 100vh;
+
 }
+
+.NomeSorteado {
+  font-size: xx-large;
+}
+
 .Botao {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: purple;
-  padding: 20px;
+  background-color: #f27c38;
+  color: #f0f0f0;
+  padding: 30px;
   margin: 1em;
+  max-width: 100%;
+}
+
+.Botao h2{
+  font-size: x-large;
 }
 .qtdInscritos {
+  color:  #1b3c59;
 }
 .divNomeSorteado {
-  border: 5px solid black;
+  
   border-radius: 30px;
   border-color: black;
   padding: 6%;
@@ -214,17 +264,5 @@ body {
 .NomeSorteado{
   text-align: center;
 }
-.container2{
-    display: flex;
-  flex-direction: column;
- justify-content: center;
-  align-items: center;
-  background-color: gray;
-  padding: 2em;
-  border-radius: 10px;
-  height: 50%;
-  width: 50%;
-  max-width: 500px;
-  max-height: 500px;
-}
+
 </style>

@@ -63,7 +63,7 @@ export default {
   background-color: #e6e6e6;
   margin: 10px auto;
   border-radius: 10px;
-
+  max-width: 500px;
 }
 
 .inerContent{
@@ -122,6 +122,13 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.tituloEnv h1{
+   font-weight:bold;
+  font-size: 100%;
+  padding: 5px 10px;
+  margin-bottom: 10px
 }
 .descricaoEnv{
     display: flex;

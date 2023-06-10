@@ -19,7 +19,7 @@ const routes = [
         component:() => import('@/components/componenteProgramacao.vue')
 
     },{
-        path : '/inscritos/:url/:idEvent',name: "Inscritos",
+        path : '/inscritos/:url/:idEvent/:nomeEvento',name: "Inscritos",
         component:() => import('@/components/componenteInscritos.vue'),
     }
 
